@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>TrackballRotator Demo</title>
+<style>
+    body {
+        background-color: #EEEEEE;
+    }
+</style>
+
+<!--
+    An example using a TrackballRotator, defined in TrackballRotator.js,
+    to implement rotation by mouse.
+-->
+
+<script src="./Utils/trackball-rotator.js"></script>
+<script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+<script src="shader.js"></script>
+<script src="./main.js"></script>
+
+
+</head>
+<body onload="init()">
+
+<h2>A Drop with "Trackball" Mouse Rotation</h2>
+
+<p id="message">Drag your mouse on the drop to rotate it.<br>
+To fill the surface press 'space'</p>
+
+
+<input type="range" id="range" value="30" min="0" max="100" oninput="changeSeparationHandler()">
+<label for="range">Eye Separation</label>
+
+
+<noscript><hr><h3>This page requires Javascript and a web browser that supports WebGL</h3><hr></noscript>
+
+<div id="canvas-holder">
+   <canvas width="800" height="800" id="webglcanvas" style="background-color:red"></canvas>
+</div>
+
+
+
+
+
+</body></html>
