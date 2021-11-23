@@ -18,7 +18,7 @@ let spaceball;                  // A SimpleRotator object that lets the user rot
 let flag = false
 let separation = 30;
 
-let rMatrix;
+let rMatrix = getRotationMatrix();
 
 /* Draws a WebGL primitive.  The first parameter must be one of the constants
  * that specify primitives:  gl.POINTS, gl.LINES, gl.LINE_LOOP, gl.LINE_STRIP,
